@@ -9,12 +9,22 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html">
-            <img src="Icon.png" class="nav-logo" alt="logo">
-        </a>
-        <h1 class="nav-title">Mixxd</h1>
-        <input type="text" class="search-bar" placeholder="Search...">
-    </nav>
+    <a href="index.html">
+        <img src="Icon.png" class="nav-logo" alt="logo">
+    </a>
+
+    <h1 class="nav-title">Mixxd</h1>
+
+    <input type="text" class="search-bar" placeholder="Search...">
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+</nav>
+
     
     <header class="artist-hero">
         <img src="scorpions.jpg" class="artist-image" alt="Scorpions band"> 
@@ -24,10 +34,13 @@
                 Legendary German rock band formed in 1965, famous for melodic hard rock and heavy metal,
                 with hits like <i>Wind of Change</i> and <i>Rock You Like a Hurricane</i>.
             </p>
+
+             <a href="login.html" class="subscribe-btn">Subscribe</a>
         </div>
     </header>
 
     <section class="songs-section">
+        <hr class="section-divider">
         <h3>Popular Songs</h3>
 
         <div class="song-card">
@@ -75,10 +88,11 @@
             </audio>
         </div>
 
+        <hr class="section-divider">
+
                 <div class="alternate-listen-text">
             <p>Or listen to this on our partnered sites:</p>
         </div>
-
 
         <div class="spotify-card">
             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/27T030eWyCQRmDyuvr1kxY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -86,5 +100,21 @@
 
     </section>
 
+            <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-title">Mixxd</p>
+            <p class="footer-text">Your destination for real music.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="footer-copyright">© 2025 Mixxd Music. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
