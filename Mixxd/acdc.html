@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mixxd | AC/DC</title>
+    <link rel="icon" href="Icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="Icon.png" class="nav-logo" alt="logo">
+        </a>
+        <h1 class="nav-title">Mixxd</h1>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </nav>
+    
+
+    <!-- AC/DC HERO SECTION -->
+    <header class="artist-hero">
+        <img src="acdc.jpg" class="artist-image" alt="AC/DC band">
+        <div class="artist-info">
+            <h2 class="artist-name">AC/DC</h2>
+            <p class="artist-description">
+                Legendary Australian rock band formed in 1973, known for high-voltage riffs,
+                powerful vocals, and iconic albums like <i>Back in Black</i> and
+                <i>Highway to Hell</i>.
+            </p>
+        </div>
+    </header>
+
+    <!-- SONG PLAYER SECTION -->
+    <section class="songs-section">
+        <h3>Popular Songs</h3>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Back In Black</p>
+            </div>
+            <audio controls>
+                <source src="backinblack.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Highway to Hell</p>
+            </div>
+            <audio controls>
+                <source src="highwaytohell.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Thunderstruck</p>
+            </div>
+            <audio controls>
+                <source src="thunderstruck.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">You Shook Me All Night Long</p>
+            </div>
+            <audio controls>
+                <source src="youshookme.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">T.N.T.</p>
+            </div>
+            <audio controls>
+                <source src="tnt.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <div class="alternate-listen-text">
+            <p>Or listen to this on our partnered sites:</p>
+        </div>
+
+
+        <div class="spotify-card">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/711MCceyCBcFnzjGY4Q7Un?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
