@@ -522,3 +522,15 @@ audio {
 .nav-links-right a:hover {
     color: crimson;
 }
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* keeps your content stacked vertically */
+    align-items: center;    /* centers children horizontally */
+}
+
+.img {
+    max-width: 100%; /* optional: keeps image responsive */
+    height: auto;
+    margin: 20px 0;  /* optional spacing above and below */
+}

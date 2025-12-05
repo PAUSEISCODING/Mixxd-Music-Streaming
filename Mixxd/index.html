@@ -32,32 +32,83 @@
 
     <section class="artist-grid">
 
-        <a href="acdc.html" class="artist-card">
-            <img src="acdc.jpg" class="artist-card-img" alt="AC/DC">
-            <p class="artist-card-name">AC/DC</p>
-        </a>
+    <a href="acdc.html" class="artist-card">
+        <img src="acdc.jpg" class="artist-card-img" alt="AC/DC">
+        <p class="artist-card-name">AC/DC</p>
+    </a>
 
-        <a href="kiss.html" class="artist-card">
-            <img src="kiss.jpg" class="artist-card-img" alt="KISS">
-            <p class="artist-card-name">KISS</p>
-        </a>
+    <a href="kiss.html" class="artist-card">
+        <img src="kiss.jpg" class="artist-card-img" alt="KISS">
+        <p class="artist-card-name">KISS</p>
+    </a>
 
-        <a href="scorpions.html" class="artist-card">
-            <img src="scorpions.jpg" class="artist-card-img" alt="Scorpions">
-            <p class="artist-card-name">Scorpions</p>
-        </a>
+    <a href="scorpions.html" class="artist-card">
+        <img src="scorpions.jpg" class="artist-card-img" alt="Scorpions">
+        <p class="artist-card-name">Scorpions</p>
+    </a>
 
-        <a href="ozzy.html" class="artist-card">
-            <img src="ozzy.jpg" class="artist-card-img" alt="Ozzy Osbourne">
-            <p class="artist-card-name">Ozzy Osbourne</p>
-        </a>
+    <a href="ozzy.html" class="artist-card">
+        <img src="ozzy.jpg" class="artist-card-img" alt="Ozzy Osbourne">
+        <p class="artist-card-name">Ozzy Osbourne</p>
+    </a>
 
-        <a href="metallica.html" class="artist-card">
-            <img src="metallica.jpg" class="artist-card-img" alt="Metallica">
-            <p class="artist-card-name">Metallica</p>
-        </a>
+    <a href="metallica.html" class="artist-card">
+        <img src="metallica.jpg" class="artist-card-img" alt="Metallica">
+        <p class="artist-card-name">Metallica</p>
+    </a>
 
-    </section>
+    <!-- New Artist Templates -->
+    <a href="queen.html" class="artist-card">
+        <img src="queen.jpg" class="artist-card-img" alt="Queen">
+        <p class="artist-card-name">Queen</p>
+    </a>
+
+    <a href="thepolice.html" class="artist-card">
+        <img src="thepolice.png" class="artist-card-img" alt="The Police">
+        <p class="artist-card-name">The Police</p>
+    </a>
+
+    <a href="motleycrue.html" class="artist-card">
+        <img src="motleycrue.png" class="artist-card-img" alt="Mötley Crüe">
+        <p class="artist-card-name">Mötley Crüe</p>
+    </a>
+
+    <a href="davidleeroth.html" class="artist-card">
+        <img src="davidleeroth.jpg" class="artist-card-img" alt="David Lee Roth">
+        <p class="artist-card-name">David Lee Roth</p>
+    </a>
+
+    <a href="tesla.html" class="artist-card">
+        <img src="tesla.webp" class="artist-card-img" alt="Tesla">
+        <p class="artist-card-name">Tesla</p>
+    </a>
+
+        <!-- New Artist Templates -->
+    <a href="vanhalen.html" class="artist-card">
+        <img src="vanhalen.jpg" class="artist-card-img" alt="Van Halen">
+        <p class="artist-card-name">Van Halen</p>
+    </a>
+
+    <a href="whitelion.html" class="artist-card">
+        <img src="whitelion.jpg" class="artist-card-img" alt="White Lion">
+        <p class="artist-card-name">White Lion</p>
+    </a>
+
+    <a href="blacksabbath.html" class="artist-card">
+        <img src="blacksabbath.webp" class="artist-card-img" alt="Black Sabbath">
+        <p class="artist-card-name">Black Sabbath</p>
+    </a>
+
+    <a href="twistedsister.html" class="artist-card">
+        <img src="twistedsister.jpg" class="artist-card-img" alt="Twisted Sister">
+        <p class="artist-card-name">Twisted Sister</p>
+    </a>
+
+    <a href="sixxam.html" class="artist-card">
+        <img src="sixxam.jpg" class="artist-card-img" alt="Sixx:A.M.">
+        <p class="artist-card-name">Sixx:A.M.</p>
+    </a>
+</section>
 
         <!-- Footer -->
     <footer class="footer">
@@ -76,6 +127,25 @@
         </div>
     </footer>
 
+<script>
+// Function to update the nav bar based on login status
+function updateNavBar() {
+    const navLinks = document.querySelector(".nav-links");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if(currentUser) {
+        // Replace Login link with Account
+        const loginLink = navLinks.querySelector('a[href="login.html"]');
+        if(loginLink) {
+            loginLink.textContent = "Account";
+            loginLink.href = "account.html"; // make this page to show user info
+        }
+    }
+}
+
+// Run on page load
+updateNavBar();
+</script>
+
 </body>
 </html>
-

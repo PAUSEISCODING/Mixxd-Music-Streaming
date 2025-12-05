@@ -117,5 +117,26 @@
             <p class="footer-copyright">© 2025 Mixxd Music. All rights reserved.</p>
         </div>
     </footer>
+
+<script>
+// Function to update the nav bar based on login status
+function updateNavBar() {
+    const navLinks = document.querySelector(".nav-links");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if(currentUser) {
+        // Replace Login link with Account
+        const loginLink = navLinks.querySelector('a[href="login.html"]');
+        if(loginLink) {
+            loginLink.textContent = "Account";
+            loginLink.href = "account.html"; // make this page to show user info
+        }
+    }
+}
+
+// Run on page load
+updateNavBar();
+</script>
+
 </body>
 </html>

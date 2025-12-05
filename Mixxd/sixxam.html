@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mixxd | Scorpions</title> 
+    <title>Mixxd | Sixx:A.M.</title> 
     <link rel="icon" href="Icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,33 +9,34 @@
 <body>
 
     <nav class="navbar">
-    <a href="index.html">
-        <img src="Icon.png" class="nav-logo" alt="logo">
-    </a>
+        <a href="index.html">
+            <img src="Icon.png" class="nav-logo" alt="logo">
+        </a>
 
-    <h1 class="nav-title">Mixxd</h1>
+        <h1 class="nav-title">Mixxd</h1>
 
-    <input type="text" class="search-bar" placeholder="Search...">
+        <input type="text" class="search-bar" placeholder="Search...">
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
-    </div>
-</nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
 
     
     <header class="artist-hero">
-        <img src="scorpions.jpg" class="artist-image" alt="Scorpions band"> 
+        <img src="sixxam.jpg" class="artist-image" alt="Sixx:A.M. band"> 
         <div class="artist-info">
-            <h2 class="artist-name">Scorpions</h2>
+            <h2 class="artist-name">Sixx:A.M.</h2>
             <p class="artist-description">
-                Legendary German rock band formed in 1965, famous for melodic hard rock and heavy metal,
-                with hits like <i>Wind of Change</i> and <i>Rock You Like a Hurricane</i>.
+                American rock band formed in 2007 by Mötley Crüe bassist Nikki Sixx, with DJ Ashba and James Michael. 
+                Known for hits like <i>Life Is Beautiful</i> and <i>Stars</i>, blending hard rock with melodic elements.
             </p>
 
-             <a href="login.html" class="subscribe-btn">Subscribe</a>
+            <!-- Subscribe Button -->
+            <a href="login.html" class="subscribe-btn">Subscribe</a>
         </div>
     </header>
 
@@ -45,62 +46,62 @@
 
         <div class="song-card">
             <div class="song-info">
-                <p class="song-title">Wind of Change</p>
+                <p class="song-title">Life Is Beautiful</p>
             </div>
             <audio controls>
-                <source src="windofchange.mp3" type="audio/mpeg">
+                <source src="lifeisbeautiful.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <div class="song-card">
             <div class="song-info">
-                <p class="song-title">Rock You Like a Hurricane</p>
+                <p class="song-title">Stars</p>
             </div>
             <audio controls>
-                <source src="rockyoulikeahurricane.mp3" type="audio/mpeg">
+                <source src="stars.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <div class="song-card">
             <div class="song-info">
-                <p class="song-title">Still Loving You</p>
+                <p class="song-title">This Is Gonna Hurt</p>
             </div>
             <audio controls>
-                <source src="stilllovingyou.mp3" type="audio/mpeg">
+                <source src="thisisgonnahurt.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <div class="song-card">
             <div class="song-info">
-                <p class="song-title">No One Like You</p>
+                <p class="song-title">Pray for Me</p>
             </div>
             <audio controls>
-                <source src="noonelikeyou.mp3" type="audio/mpeg">
+                <source src="prayforme.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <div class="song-card">
             <div class="song-info">
-                <p class="song-title">Send Me an Angel</p>
+                <p class="song-title">Lies of the Beautiful People</p>
             </div>
             <audio controls>
-                <source src="sendmeanangel.mp3" type="audio/mpeg">
+                <source src="liesofthebeautifulpeople.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <hr class="section-divider">
 
-                <div class="alternate-listen-text">
+        <div class="alternate-listen-text">
             <p>Or listen to this on our partnered sites:</p>
         </div>
 
         <div class="spotify-card">
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/27T030eWyCQRmDyuvr1kxY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3886aFez2HDLkio5tUzmP6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
     </section>
 
-            <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-title">Mixxd</p>
@@ -118,22 +119,20 @@
     </footer>
 
 <script>
-// Function to update the nav bar based on login status
 function updateNavBar() {
-    const navLinks = document.querySelector(".nav-links");
+    const navLinksRight = document.querySelector(".nav-links-right");
     const currentUser = localStorage.getItem("currentUser");
 
     if(currentUser) {
         // Replace Login link with Account
-        const loginLink = navLinks.querySelector('a[href="login.html"]');
-        if(loginLink) {
+        const loginLink = navLinksRight.querySelector('a[href="login.html"]');
+        if(loginLink){
             loginLink.textContent = "Account";
-            loginLink.href = "account.html"; // make this page to show user info
+            loginLink.href = "account.html"; // create an account page if you want
         }
     }
 }
 
-// Run on page load
 updateNavBar();
 </script>
 
