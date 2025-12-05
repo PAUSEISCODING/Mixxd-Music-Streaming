@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mixxd | David Lee Roth</title> 
+    <link rel="icon" href="Icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="Icon.png" class="nav-logo" alt="logo">
+        </a>
+
+        <h1 class="nav-title">Mixxd</h1>
+
+        <input type="text" class="search-bar" placeholder="Search...">
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    
+    <header class="artist-hero">
+        <img src="davidleeroth.jpg" class="artist-image" alt="David Lee Roth"> 
+        <div class="artist-info">
+            <h2 class="artist-name">David Lee Roth</h2>
+            <p class="artist-description">
+                Iconic American rock singer and songwriter, best known as the flamboyant frontman of Van Halen,
+                with a successful solo career featuring hits like <i>Just a Gigolo/I Ain’t Got Nobody</i> 
+                and <i>California Girls</i>.
+            </p>
+
+            <!-- Subscribe Button -->
+            <a href="login.html" class="subscribe-btn">Subscribe</a>
+        </div>
+    </header>
+
+    <section class="songs-section">
+        <hr class="section-divider">
+        <h3>Popular Songs</h3>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Just a Gigolo/I Ain’t Got Nobody</p>
+            </div>
+            <audio controls>
+                <source src="justagigolo.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">California Girls</p>
+            </div>
+            <audio controls>
+                <source src="californiagirls.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Yankee Rose</p>
+            </div>
+            <audio controls>
+                <source src="yankeerose.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">A Little Ain’t Enough</p>
+            </div>
+            <audio controls>
+                <source src="alittleaintenough.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <p class="song-title">Just Like Paradise</p>
+            </div>
+            <audio controls>
+                <source src="justlikeparadise.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <hr class="section-divider">
+
+        <div class="alternate-listen-text">
+            <p>Or listen to this on our partnered sites:</p>
+        </div>
+
+        <div class="spotify-card">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0KyCXNSa7ZMb5LydfKbLG3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-title">Mixxd</p>
+            <p class="footer-text">Your destination for real music.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="footer-copyright">© 2025 Mixxd Music. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+// Function to update the nav bar based on login status
+function updateNavBar() {
+    const navLinks = document.querySelector(".nav-links");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if(currentUser) {
+        // Replace Login link with Account
+        const loginLink = navLinks.querySelector('a[href="login.html"]');
+        if(loginLink) {
+            loginLink.textContent = "Account";
+            loginLink.href = "account.html"; // make this page to show user info
+        }
+    }
+}
+
+// Run on page load
+updateNavBar();
+</script>
+
+</body>
+</html>
