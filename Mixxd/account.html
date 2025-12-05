@@ -16,11 +16,46 @@
     </nav>
 
     <div class="login-container">
-        <div class="login-box">
-            <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
-            <button class="login-btn" id="logoutBtn">Logout</button>
+    <div class="login-box">
+        <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+        <button class="login-btn" id="logoutBtn">Logout</button>
+
+        <div class="subscription-container">
+    <h3 class="subscription-title">Upgrade Your Subscription</h3>
+
+    <div class="subscription-grid">
+
+        <!-- Standard Plan -->
+        <div class="subscription-card">
+            <h4>Standard</h4>
+            <p>Great for everyday listeners who want full access 24/7.</p>
+            <div class="price">£7.99 / month</div>
+            <button class="choose-plan-btn">Select</button>
+        </div>
+
+        <!-- Student Plan -->
+        <div class="subscription-card">
+            <h4>Student</h4>
+            <p>Discounted plan for students with full Mixxd access.</p>
+            <div class="price">£4.99 / month</div>
+            <button class="choose-plan-btn">Select</button>
+        </div>
+
+        <!-- Individual Plan -->
+        <div class="subscription-card">
+            <h4>Individual</h4>
+            <p>Perfect for solo listeners who want unlimited streaming.</p>
+            <div class="price">£11.99 / month</div>
+            <button class="choose-plan-btn">Select</button>
+        </div>
+
+    </div>
+</div>
+
         </div>
     </div>
+</div>
+
 
     <script>
         const username = localStorage.getItem("currentUser");
